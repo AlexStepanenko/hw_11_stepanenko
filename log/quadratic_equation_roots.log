@@ -1,0 +1,5 @@
+INFO:root:Program starts.
+INFO:root:Parsing the filepath.
+INFO:root:Detect faces.
+INFO:root:Serialization.
+INFO:root:Program ends.
