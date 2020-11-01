@@ -1,0 +1,4 @@
+freeze==3.0
+numpy==1.19.3
+opencv-python==4.4.0.44
+six==1.15.0
