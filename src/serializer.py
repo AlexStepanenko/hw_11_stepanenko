@@ -8,5 +8,5 @@ class Serializer:
     def serialize(self, frames):
         self.log.info('Serialization.')
 
-        with open('./dump/faces.pickle', 'wb') as fl:
+        with open('/Users/astepanenko/projects/ln/hw11/dump/faces.pickle', 'wb') as fl:
             pickle.dump(frames, fl)

@@ -1,0 +1,3 @@
+INFO:test:[*] Execution time of detect_images is: 0.1781019687652588 sec.
+INFO:test:[*] Execution time of serialize_images is: 0.00036163330078125 sec.
+INFO:test:[*] Expected count 4, real count 5

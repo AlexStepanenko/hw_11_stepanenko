@@ -5,7 +5,9 @@ import os
 class FaceDetector:
     def __init__(self, log):
         self.log = log
-        self.face_cascade = cv2.CascadeClassifier('./src/haarcascade_frontalface_default.xml')
+        self.face_cascade = cv2.CascadeClassifier(
+            '/Users/astepanenko/projects/ln/hw11/src/haarcascade_frontalface_default.xml'
+        )
 
     def detect_all(self, filepath):
         self.log.info('Detect faces.')

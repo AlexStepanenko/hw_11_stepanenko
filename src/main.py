@@ -1,19 +1,18 @@
-import logging
+from logger import Logger
 from path_reader import PathReader
 from face_detector import FaceDetector
 from serializer import Serializer
 
-logging.basicConfig(level=logging.DEBUG, filename='./log/quadratic_equation_roots.log', filemode='w')
-
 
 def run():
-    logging.info('Program starts.')
+    logger = Logger().setup_logger('main', '/Users/astepanenko/projects/ln/hw11/log/main.log')
+    logger.info('Program starts.')
 
-    files_path = PathReader(logging).read()
-    frames = FaceDetector(logging).detect_all(files_path)
-    Serializer(logging).serialize(frames)
+    files_path = PathReader(logger).read()
+    frames = FaceDetector(logger).detect_all(files_path)
+    Serializer(logger).serialize(frames)
 
-    logging.info('Program ends.')
+    logger.info('Program ends.')
 
 
 if __name__ == '__main__':
